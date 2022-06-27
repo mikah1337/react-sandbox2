@@ -12,16 +12,14 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
-// Import commands.js using ES2015 syntax:
 import './commands'
+import {mount} from "cypress/react"
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
-import { mount } from 'cypress/react'
-
-Cypress.Commands.add('mount', mount)
+Cypress.Commands.add('mount', (component, options) => {
+    // Wrap any parent components needed
+    // ie: return mount(<MyProvider>{component}</MyProvider>, options)
+    return mount(component, options)
+})
 
 // Example use:
 // cy.mount(<MyComponent />)
