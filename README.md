@@ -2,9 +2,9 @@
 
 This project is a sandbox proof of concept for `Cypress` testing.
 
-## Starting/Initializing
-
 ---
+
+## Starting/Initializing
 
 1. Run `npm i` to install library modules
 2. `npm start` to start a local environment of the project
@@ -14,9 +14,9 @@ This project is a sandbox proof of concept for `Cypress` testing.
 
 4. Open a new terminal and run `npx cypress open` to begin the Cypress upgrade to version 10 (just follow the steps on the UI).
 
-## Testing
-
 ---
+
+## Testing
 
 > You have a few options on how you want to interact with testing. To begin,
 open a new terminal and enter one of the following options:
@@ -25,7 +25,7 @@ open a new terminal and enter one of the following options:
 
 Opens the interactive Cypress GUI. You can switch between **E2E** testing and **Component** testing
 
-![img.png](docs/readme_01.png)
+<img src="docs/readme_01.png" width="600">
 
 <details>
     <summary>Differences and more information...</summary>
@@ -41,25 +41,6 @@ Brief summary:
 
 </details>
 
-<div style="margin-left:24px">
-
-### Navigating
-
----
-After you run `npm test`, an interactive GUI will open.
-
-#### E2E Testing
-![](docs/cypress_testingtypes_e2e.gif)
-
-You can navigate between the two testing types like so:
-
-#### Component Testing
-![](docs/cypress_testingtypes_switch.gif)
-
-
-</div>
-
-
 
 ### `npm run record-test`
 
@@ -70,6 +51,20 @@ Records and uploads a video to the Cypress dashboard of the test run<br />
 
 Records and uploads the test run AND opens the interactive Cypress GUI
 
+---
+
+
+## Navigating the Cypress GUI
+
+After you run `npm test`, an interactive GUI will open.
+
+#### E2E Testing
+![](docs/cypress_testingtypes_e2e.gif)
+
+You can navigate between the two testing types like so:
+
+#### Component Testing
+![](docs/cypress_testingtypes_switch.gif)
 
 ---
 
@@ -86,7 +81,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
 
 Launches the Cypress test runner in the interactive watch mode.<br />
 
