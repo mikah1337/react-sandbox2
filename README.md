@@ -2,7 +2,6 @@
 
 This project is a sandbox proof of concept for `Cypress` testing.
 
----
 
 ## Starting/Initializing
 
@@ -14,57 +13,65 @@ This project is a sandbox proof of concept for `Cypress` testing.
 
 4. Open a new terminal and run `npx cypress open` to begin the Cypress upgrade to version 10 (just follow the steps on the UI).
 
----
+<br />
 
 ## Testing
-
-> You have a few options on how you want to interact with testing. To begin,
+You have a few options on how you want to interact with testing. To begin,
 open a new terminal and enter one of the following options:
 
-### `npm test`
+1. #### `npm test`
+   Opens the interactive Cypress GUI. You can switch between **E2E** testing and **Component** testing
 
-Opens the interactive Cypress GUI. You can switch between **E2E** testing and **Component** testing
+   <img src="docs/readme_01.png" width="600">
 
-<img src="docs/readme_01.png" width="600">
+   <details>
+       <summary>🔰 Differences and more information...</summary>
 
-<details>
-    <summary>Differences and more information...</summary>
+   <br />
+   Please read the following for the differences: <br />
+   https://docs.cypress.io/guides/core-concepts/testing-types#Common-scenarios-for-component-tests
 
-Please read the following for the differences:<br />
-https://docs.cypress.io/guides/core-concepts/testing-types#Common-scenarios-for-component-tests
+   Brief summary:
 
-Brief summary:
-
-| E2E                                                                                                                                                                                                                                                                                                                      | Component                                                                                                                                                                                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| - Ensure your app is functioning as a cohesive whole<br /> - Tests match the user experience<br /> - Validates critical workflows like authentication and purchasing<br /> - Ensures data is persisted and displayed through multiple screens<br /> - Useful for running Smoke Tests and System Checks before deployment | - Doesn't rely on any external system to run<br /> - Doesn't ensure overall app quality<br /> - Doesn't call into external APIs/Services<br /> - **Example usage:** Testing a date picker works properly for a variety of scenarios<br /> - **Example usage:** Testing that a form shows and hides specific sections based on input |
+   | E2E                                                                                                                                                                                                                                                                                                                      | Component                                                                                                                                                                                                                                                                                                                           |
+   |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | - Ensure your app is functioning as a cohesive whole<br /> - Tests match the user experience<br /> - Validates critical workflows like authentication and purchasing<br /> - Ensures data is persisted and displayed through multiple screens<br /> - Useful for running Smoke Tests and System Checks before deployment | - Doesn't rely on any external system to run<br /> - Doesn't ensure overall app quality<br /> - Doesn't call into external APIs/Services<br /> - **Example usage:** Testing a date picker works properly for a variety of scenarios<br /> - **Example usage:** Testing that a form shows and hides specific sections based on input |
 
 </details>
 
+2. #### `npm run record-test`
+   Records and uploads a video to the Cypress dashboard of the test run to the [Cypress Test Run Dashboard](https://dashboard.cypress.io/projects/abqn2e/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&timeRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D)
 
-### `npm run record-test`
+3. #### `npm run test-all` (MAC only)
+   Records and uploads the test run AND opens the interactive Cypress GUI
 
-Records and uploads a video to the Cypress dashboard of the test run<br />
-[Cypress Test Run Dashboard](https://dashboard.cypress.io/projects/abqn2e/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&timeRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D)
-
-### `npm run test-all`
-
-Records and uploads the test run AND opens the interactive Cypress GUI
-
----
-
+<br />
 
 ## Navigating the Cypress GUI
 
 After you run `npm test`, an interactive GUI will open.
 
-#### E2E Testing
-![](docs/cypress_testingtypes_e2e.gif)
+### E2E Testing
+
+<details>
+   <summary>⚠️ Click to see E2E testing...</summary>
+   
+   ![](docs/cypress_testingtypes_e2e.gif)
+   
+</details>
+
 
 You can navigate between the two testing types like so:
 
-#### Component Testing
-![](docs/cypress_testingtypes_switch.gif)
+### Switching + Component Testing
+
+<details>
+   <summary>⚠️ Click to see Switching + Component Testing...</summary>
+   
+   ![](docs/cypress_testingtypes_switch.gif)
+   
+</details>
+
 
 ---
 
